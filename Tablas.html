@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <style>
+        table, th, td {         
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+        thead{
+            background-color: brown;
+
+        }
+
+        tbody{
+           
+        }
+
+        tfoot{
+            background-color: blue;
+            color: aliceblue;
+
+        }
+    </style>
+
+    <!-- Tabla simple -->
+
+    <table>
+        <tr>
+            <td>Marta</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>Jose</td>
+            <td>5</td>
+            <td>7</td>
+
+
+        </tr>
+
+        <tr>
+            <td>poli</td>
+            <td>6</td>
+            <td>2</td>
+
+        </tr>
+
+    </table>
+    <br>
+
+     <!-- Tabla con encabezados -->
+     <table>
+          <caption>Calificaciones de Alumnos</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+
+        </tr>
+        <tr>
+            <td>Marta gomez</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>Jose pilo</td>
+            <td>5</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td>poli depa</td>
+            <td>6</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <br>
+   
+    <!-- Tabla Traspuesta -->
+     <table>
+        
+        <caption>Calificaciones de Alumnos</caption>
+        <tr>
+            <th>Nombre</th>
+             <td>Marta gomez</td>
+             <td>Jose pilo</td>
+             <td>poli depa</td>
+
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <td>8</td> 
+            <td>5</td> 
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <th>Nota 2</th>
+            <td>9</td>
+            <td>7</td>
+            <td>2</td> 
+        </tr>
+    </table>
+    <br>
+    
+     <!-- Tabla con colspan -->
+     <table>
+        <caption>Lista de Precios</caption>
+      <tr>
+          <th>Articulo</th>
+          <th>Precio 1</th>
+          <th>precio 2</th>
+
+      </tr>
+      <tr>
+          <td>Azucar</td>
+          <td>$58</td>
+          <td>$49</td>
+      </tr>
+
+      <tr>
+          <td>Harina</td>
+          <td colspan="2">$125</td>
+         
+      </tr>
+
+      <tr>
+          <td>Aceite</td>
+          <td>$564</td>
+          <td>$122</td>
+      </tr>
+  </table>
+  <br>
+
+   <!-- Tabla con rowspan -->
+   <table>
+    <caption>Lista de Precios</caption>
+  <tr>
+      <th>Articulo</th>
+      <th>Precio 1</th>
+      <th>precio 2</th>
+
+  </tr>
+  <tr>
+      <td>Azucar</td>
+      <td>$58</td>
+      <td>$49</td>
+  </tr>
+
+  <tr 
+      <td>Harina</td> 
+      <td>$125</td>
+      <td rowspan="2">$145</td>
+  </tr>
+
+  <tr>
+      <td>Aceite</td>
+      <td>$564</td>
+      <!-- no hace falta escribir la tercera celda -->
+  </tr>
+</table>
+<br>
+
+ <!-- Tabla con encabezados -->
+ <table>
+    <caption>Calificaciones de Alumnos</caption>
+    <colgroup>
+        <col>
+        <col span="1" style="background-color:yellow;">
+
+    </colgroup>
+  <tr>
+      <th>Nombre</th>
+      <th>Nota 1</th>
+      <th>Nota 2</th>
+
+  </tr>
+  <tr>
+      <td>Marta gomez</td>
+      <td>8</td>
+      <td>9</td>
+  </tr>
+
+  <tr>
+      <td>Jose pilo</td>
+      <td>5</td>
+      <td>7</td>
+  </tr>
+
+  <tr>
+      <td>poli depa</td>
+      <td>6</td>
+      <td>2</td>
+  </tr>
+</table>
+<br>
+
+
+
+<!-- Tabla con colspan -->
+<table>
+  <caption>Lista de Precios</caption>
+<tr>
+    <th>Articulo</th>
+    <th>Precio 1</th>
+    <th>precio 2</th>
+
+</tr>
+<tr>
+    <td>Azucar</td>
+    <td>$58</td>
+    <td>$49</td>
+</tr>
+
+<tr>
+    <td>Harina</td>
+    <td colspan="2">$125</td>
+   
+</tr>
+
+<tr>
+    <td>Aceite</td>
+    <td>$122</td>
+</tr>
+</table>
+<br>
+
+ <!-- Tabla con agrupamientos semanticos -->
+ <table>
+    <caption>Calificaciones de Alumnos</caption>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+         </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+      <td>Marta gomez</td>
+      <td>8</td>
+      <td>9</td>
+        </tr>
+
+        <tr>
+            <td>Jose pilo</td>
+            <td>5</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td>poli depa</td>
+            <td>6</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Promedio</td>
+            <td>5.0</td>
+            <td>7.0</td>
+        </tr>
+    </tfoot>
+
+ </table>
+ <br>
+          
+</body>
+</html>
+                                        
